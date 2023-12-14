@@ -183,6 +183,20 @@ function Header() {
 					src={`${open ? "/X.png" : "/menu-01.png"}`}
 					alt=""
 				/>
+				<div
+					className={`absolute ${
+						open ? "left-0" : "left-full opacity-0"
+					} lg:hidden w-screen top-full duration-500`}
+				>
+					{pages.map((page, i) => {
+						return (
+							<div className="bg-[#121212] cursor-pointer text-white flex justify-between border-b p-2">
+								<p>{page.name}</p>
+								{page.drop ? <div className="cursor-pointer">{downDrop}</div> : ""}
+							</div>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

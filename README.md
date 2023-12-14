@@ -1,2 +1,2 @@
-use npm to install dependencies
+use npm to install dependencies,
 Run - npm run dev
