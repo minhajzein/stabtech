@@ -114,8 +114,8 @@ function AlsoProvides() {
 					{cardDetails.map((data, i) => {
 						return (
 							<div key={i}>
-								<div className="flex hover:bg-[#F0DE00] bottom-0 mt-[54px] duration-300 hover:bg-opacity-30 text-white rounded-lg cursor-pointer border-2 border-[#F0DE00] w-[297px] h-[225px] flex-col justify-center items-center relative gap-2">
-									<div className="rounded-full border-2 border-[#F0DE00] absolute z-50 right-1/3 -top-1/4 bg-white duration-300 flex justify-center items-center h-[108px] w-[108px] hover:bg-[#F0DE00]">
+								<div className="flex group hover:bg-[#F0DE00] bottom-0 mt-[54px] duration-300 hover:bg-opacity-30 text-white rounded-lg cursor-pointer border-2 border-[#F0DE00] w-[297px] h-[225px] flex-col justify-center items-center relative gap-2">
+									<div className="rounded-full border-2 border-[#F0DE00] absolute z-50 right-1/3 -top-1/4 bg-white duration-300 flex justify-center items-center h-[108px] w-[108px] group-hover:bg-[#F0DE00]">
 										<img src={data.image} alt="" />
 									</div>
 									<h1 className="text-center text-lg font-bold mt-10">{data.hedear}</h1>
